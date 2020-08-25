@@ -1,0 +1,527 @@
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('../../fonts/Semplicita/SemplicitaPro-Light.eot');
+    src: local('Semplicita Pro Light'), local('SemplicitaPro-Light'),
+        url('../../fonts/Semplicita/SemplicitaPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-Light.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-Light.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('../../fonts/Semplicita/SemplicitaPro-Bold.eot');
+    src: local('Semplicita Pro Bold'), local('SemplicitaPro-Bold'),
+        url('../../fonts/Semplicita/SemplicitaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-Bold.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-Bold.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('../../fonts/Semplicita/SemplicitaPro-BoldItalic.eot');
+    src: local('Semplicita Pro Bold Italic'), local('SemplicitaPro-BoldItalic'),
+        url('../../fonts/Semplicita/SemplicitaPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-BoldItalic.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('../../fonts/Semplicita/SemplicitaPro-SemiBoldItalic.eot');
+    src: local('Semplicita Pro SemiBold Italic'), local('SemplicitaPro-SemiBoldItalic'),
+        url('../../fonts/Semplicita/SemplicitaPro-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-SemiBoldItalic.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-SemiBoldItalic.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('SemplicitaPro-MediumItalic.eot');
+    src: local('Semplicita Pro Medium Italic'), local('SemplicitaPro-MediumItalic'),
+        url('../../fonts/Semplicita/SemplicitaPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-MediumItalic.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-MediumItalic.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('../../fonts/Semplicita/SemplicitaPro-LightItalic.eot');
+    src: local('Semplicita Pro Light Italic'), local('SemplicitaPro-LightItalic'),
+        url('../../fonts/Semplicita/SemplicitaPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-LightItalic.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-LightItalic.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('../../fonts/Semplicita/SemplicitaPro-SemiBold.eot');
+    src: local('Semplicita Pro SemiBold'), local('SemplicitaPro-SemiBold'),
+        url('../../fonts/Semplicita/SemplicitaPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-SemiBold.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-SemiBold.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('../../fonts/Semplicita/SemplicitaPro-Regular.eot');
+    src: local('Semplicita Pro Regular'), local('SemplicitaPro-Regular'),
+        url('../../fonts/Semplicita/SemplicitaPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-Regular.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-Regular.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('../../fonts/Semplicita/SemplicitaPro-Italic.eot');
+    src: local('Semplicita Pro Italic'), local('SemplicitaPro-Italic'),
+        url('../../fonts/Semplicita/SemplicitaPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-Italic.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-Italic.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Semplicita Pro';
+    src: url('../../fonts/Semplicita/SemplicitaPro-Medium.eot');
+    src: local('Semplicita Pro Medium'), local('SemplicitaPro-Medium'),
+        url('../../fonts/Semplicita/SemplicitaPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Semplicita/SemplicitaPro-Medium.woff2') format('woff2'),
+        url('../../fonts/Semplicita/SemplicitaPro-Medium.woff') format('woff'),
+        url('../../fonts/Semplicita/SemplicitaPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueBoldCondensed.eot');
+    src: local('Helvetica Neue Condensed Bold'), local('HelveticaNeueBoldCondensed'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueBoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueBoldCondensed.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueBoldCondensed.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueBoldCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueBlackCondensed.eot');
+    src: local('Helvetica Neue Condensed Black'), local('HelveticaNeueBlackCondensed'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueBlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueBlackCondensed.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueBlackCondensed.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueBlackCondensed.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Bold.eot');
+    src: local('HelveticaNeueCyr-Bold'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Bold.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Light.eot');
+    src: local('HelveticaNeueCyr-Light'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Light.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Light.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Medium.eot');
+    src: local('HelveticaNeueCyr-Medium'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('HelveticaNeueCyr-MediumItalic.eot');
+    src: local('HelveticaNeueCyr-MediumItalic'),
+        url('HelveticaNeueCyr-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueCyr-MediumItalic.woff2') format('woff2'),
+        url('HelveticaNeueCyr-MediumItalic.woff') format('woff'),
+        url('HelveticaNeueCyr-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-LightItalic.eot');
+    src: local('HelveticaNeueCyr-LightItalic'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-LightItalic.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-LightItalic.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-HeavyItalic.eot');
+    src: local('HelveticaNeueCyr-HeavyItalic'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-HeavyItalic.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-HeavyItalic.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Black.eot');
+    src: local('HelveticaNeueCyr-Black'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Black.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Black.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Heavy.eot');
+    src: local('HelveticaNeueCyr-Heavy'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Heavy.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Heavy.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Italic.eot');
+    src: local('HelveticaNeueCyr-Italic'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Italic.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Italic.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Roman.eot');
+    src: local('HelveticaNeueCyr-Roman'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BlackItalic.eot');
+    src: local('HelveticaNeueCyr-BlackItalic'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BlackItalic.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BlackItalic.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLightItalic.eot');
+    src: local('HelveticaNeueCyr-UltraLightItalic'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLightItalic.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLightItalic.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BoldItalic.eot');
+    src: local('HelveticaNeueCyr-BoldItalic'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BoldItalic.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-ThinItalic.eot');
+    src: local('HelveticaNeueCyr-ThinItalic'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-ThinItalic.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-ThinItalic.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLight.eot');
+    src: local('HelveticaNeueCyr-UltraLight'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLight.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Thin.eot');
+    src: local('HelveticaNeueCyr-Thin'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Thin.woff2') format('woff2'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Thin.woff') format('woff'),
+        url('../../fonts/HelveicaNeue/HelveticaNeueCyr-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-Bold.eot');
+    src: local('Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'),
+        url('../../fonts/Avenir/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-Bold.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-Bold.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-ThinItalic.eot');
+    src: local('Avenir Next Cyr Thin Italic'), local('AvenirNextCyr-ThinItalic'),
+        url('../../fonts/Avenir/AvenirNextCyr-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-ThinItalic.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-ThinItalic.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-MediumItalic.eot');
+    src: local('Avenir Next Cyr Medium Italic'), local('AvenirNextCyr-MediumItalic'),
+        url('../../fonts/Avenir/AvenirNextCyr-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-MediumItalic.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-MediumItalic.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Ultra';
+    src: url('../../fonts/Avenir/AvenirNextCyr-UltraLightIt.eot');
+    src: local('Avenir Next Cyr Ultra Light Italic'), local('AvenirNextCyr-UltraLightIt'),
+        url('../../fonts/Avenir/AvenirNextCyr-UltraLightIt.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-UltraLightIt.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-UltraLightIt.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-UltraLightIt.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-Light.eot');
+    src: local('Avenir Next Cyr Light'), local('AvenirNextCyr-Light'),
+        url('../../fonts/Avenir/AvenirNextCyr-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-Light.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-Light.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-Italic.eot');
+    src: local('Avenir Next Cyr Italic'), local('AvenirNextCyr-Italic'),
+        url('../../fonts/Avenir/AvenirNextCyr-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-Italic.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-Italic.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-BoldItalic.eot');
+    src: local('Avenir Next Cyr Bold Italic'), local('AvenirNextCyr-BoldItalic'),
+        url('../../fonts/Avenir/AvenirNextCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-BoldItalic.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-Heavy.eot');
+    src: local('Avenir Next Cyr Heavy'), local('AvenirNextCyr-Heavy'),
+        url('../../fonts/Avenir/AvenirNextCyr-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-Heavy.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-Heavy.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-HeavyItalic.eot');
+    src: local('Avenir Next Cyr Heavy Italic'), local('AvenirNextCyr-HeavyItalic'),
+        url('../../fonts/Avenir/AvenirNextCyr-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-HeavyItalic.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-HeavyItalic.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-Thin.eot');
+    src: local('Avenir Next Cyr Thin'), local('AvenirNextCyr-Thin'),
+        url('../../fonts/Avenir/AvenirNextCyr-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-Thin.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-Thin.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-Medium.eot');
+    src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+        url('../../fonts/Avenir/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-Medium.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-Medium.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-DemiItalic.eot');
+    src: local('Avenir Next Cyr Demi Italic'), local('AvenirNextCyr-DemiItalic'),
+        url('../../fonts/Avenir/AvenirNextCyr-DemiItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-DemiItalic.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-DemiItalic.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-DemiItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-Demi.eot');
+    src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+        url('../../fonts/Avenir/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-Demi.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-Demi.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-Demi.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-Regular.eot');
+    src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+        url('../../fonts/Avenir/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-Regular.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-Regular.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    src: url('../../fonts/Avenir/AvenirNextCyr-LightItalic.eot');
+    src: local('Avenir Next Cyr Light Italic'), local('AvenirNextCyr-LightItalic'),
+        url('../../fonts/Avenir/AvenirNextCyr-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-LightItalic.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-LightItalic.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Ultra';
+    src: url('../../fonts/Avenir/AvenirNextCyr-UltraLight.eot');
+    src: local('Avenir Next Cyr Ultra Light'), local('AvenirNextCyr-UltraLight'),
+        url('../../fonts/Avenir/AvenirNextCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Avenir/AvenirNextCyr-UltraLight.woff2') format('woff2'),
+        url('../../fonts/Avenir/AvenirNextCyr-UltraLight.woff') format('woff'),
+        url('../../fonts/Avenir/AvenirNextCyr-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
