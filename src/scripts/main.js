@@ -8,6 +8,10 @@ window.addEventListener('resize', () => {
 
 jQuery(document).ready(function () {
 
+
+  if( Cookies.get('cookieBanner') == 'yes') {
+    $('.cookieBanner').hide();
+  }
   
   $('.my-select').select2({
     minimumResultsForSearch: -1,
@@ -23,16 +27,18 @@ jQuery(document).ready(function () {
   $('.customCtaForm__form').submit(function (e) {
     e.preventDefault();
     var _this = $(this);
-    var name, tel, email, type, message, button, name_elem, tel_elem, email_elem, type_elem, message_elem;
+    var name, lastname_elem, lastname, tel, email, type, message, button, name_elem, tel_elem, email_elem, type_elem, message_elem;
     button = _this.find('.my-sbm');
 
     name_elem = _this.find('#name');
+    lastname_elem = _this.find('#lastname');
     tel_elem = _this.find('#tel');
     email_elem = _this.find('#email');
     type_elem = _this.find('#type');
     message_elem = _this.find('#message');
 
     name = name_elem.val();
+    lastname = lastname_elem.val();
     tel = tel_elem.val();
     email = email_elem.val();
     type = type_elem.val();
@@ -47,7 +53,9 @@ jQuery(document).ready(function () {
     var infoCont = _this.find('.afterSubmitBlock');
 
     var data = new FormData();
+    data.append('action', 'sendcontactform');
     data.append('name', name);
+    data.append('lastname', lastname);
     data.append('tel', tel);
     data.append('email', email);
     data.append('type', type);
@@ -66,6 +74,13 @@ jQuery(document).ready(function () {
       addErrorClass(name_elem, 'error');
     } else {
       removeErrorClass(name_elem, 'error');
+    }
+
+    if (checkEmpty(lastname)) {
+      error = true;
+      addErrorClass(lastname_elem, 'error');
+    } else {
+      removeErrorClass(lastname_elem, 'error');
     }
 
     if (checkEmpty(tel)) {
@@ -98,7 +113,7 @@ jQuery(document).ready(function () {
 
     if (!error) {
       $.ajax({
-        url: 'sendmessage.php',
+        url: ajax_object.ajaxurl,
         data: data,
         type: 'POST',
         processData: false,
@@ -124,4 +139,9 @@ jQuery(document).ready(function () {
       //infoCont.fadeIn(600).removeClass('success').addClass('errors').html(errors);
     }
   });
+
+  $('.acceptCookie').click(function(){
+    Cookies.set('cookieBanner', 'yes', { expires: 7 });
+    $('.cookieBanner').hide(600);
+  })
 })

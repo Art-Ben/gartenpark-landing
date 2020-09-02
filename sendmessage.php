@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     $client_name = $_POST['name'];
+    $client_lastname = $_POST['lastname'];
     $client_tel = $_POST['tel'];
     $client_email = $_POST['email'];
     $client_type = $_POST['type'];
@@ -20,7 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $response = array();
 
-    $to = 'info@gartenpark-korneuburg.at,investoren@gartenpark-korneuburg.at,aerzte@gartenpark-korneuburg.at,mieter@gartenpark-korneuburg.at,komfortfertig@gartenpark-korneuburg.at';
+    // $to = 'info@gartenpark-korneuburg.at,investoren@gartenpark-korneuburg.at,aerzte@gartenpark-korneuburg.at,mieter@gartenpark-korneuburg.at,komfortfertig@gartenpark-korneuburg.at';
+    $to = 'artem.benevskiy@gmail.com';
 
     $message = '';
     $site_base = $_SERVER[HTTP_HOST];
@@ -33,6 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     "\r\n";
 
     $message.= '<p><b>Name: </b> '.$client_name.
+    '</p>';
+    $message.= '<p><b>VorName: </b> '.$client_lastname.
     '</p>';
     $message.= '<p><b>Tel. : </b> '.$client_tel.
     '</p>';

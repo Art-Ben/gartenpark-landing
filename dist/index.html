@@ -35,8 +35,8 @@
                 <img src="./images/logo-grey.svg" alt="Gartenpark Korneuburg" class="logo">
             </div>
             <div class="heroSection__thumb">
-                <img src="./images/hero_bg.png" alt="Gartenpark Korneuburg" class="show-desktop">
-                <img src="./images/hero_bg--mob.png" alt="Gartenpark Korneuburg" class="show-mobile">
+                <img src="./images/hero-new_bg.png" alt="Gartenpark Korneuburg" class="show-desktop">
+                <img src="./images/hero-new_bg--mob.png" alt="Gartenpark Korneuburg" class="show-mobile">
             </div>
         </section>
 
@@ -47,34 +47,37 @@
             </div>
             <div class="intro__lines">
                 <span class="line">
-                    Hier erwartet Sie Ende 2021 ein ganz besonderes Wohnbau-Projekt: mit mehr als 200 Wohnungen, zusätzlichen Gewerbe-Einheiten und einem der größten Ärztezentren Niederösterreichs mit dem besonderen Anspruch an Qualität. Alles eingebettet in eine liebevoll gestaltete Park-Anlage. Ausführliche Informationen hierzu stellen wir Ihnen derzeit zusammen. Diese finden Sie im Oktober 2020 auf dieser Internetseite.
+                    In Kürze erwarten Sie hier einzigartige Einblicke in das Wohnbauprojekt Gartenpark Korneuburg. Mit mehr als 200 exklusiven Wohnungen, Gewerbe- und Gastronomie-Angeboten sowie einem der größten Ärztezentren Niederösterreichs. Nahe der Donau mit ihren zahlreichen Erholungsgebieten entstehen fünf Stadtvillen mit besonderem Qualitätsanspruch, eingebettet in eine liebevoll gestaltete Park-Anlage mit Außenpools, Obst- und Spielgärten.
                 </span>
 
                 <span class="line">
-                    Wir freuen uns auf Ihren erneuten Besuch.
+                    Ausführliche Informationen finden Sie ab Oktober 2020 auf dieser Internetseite.
+                </span>
+
+                <span class="line">
+                    Sie interessieren sich für das Projekt? Sie wollen Ihren Lebensmittelpunkt in den Gartenpark Korneuburg verlegen und die Vorzüge dieses exklusiven Wohnbauprojektes genießen? Dann melden Sie sich gern bei uns. Wir freuen uns auf Sie.
                 </span>
 
                 <span class="line">
                     Ihre Wiener Komfortwohnungen
-                </span>
-                <span class="line">
-                    <a href="https://wienerkomfortwohnungen.at" class="link" target="_blank">www.wienerkomfortwohnungen.at</a>
                 </span>
             </div>
         </section>
 
         <section class="awards">
             <div class="thumbGroup">
-                <img src="./images/komfortwungen.svg" alt="wienerkomfortwohnungen">
+                <a href="https://wienerkomfortwohnungen.at">
+                    <img src="./images/komfortwungen.svg" alt="wienerkomfortwohnungen">
+                </a>
             </div>
             <div class="content">
                 <span class="tit">
                     Wiener Komfortwohnungen
                 </span>
                 <div class="desc">
-                    Die Wiener Komfortwohnungen vereinen jahrzehntelange Erfahrung in der Metropolregion Wien. Wir kennen die Stadt und ihre Vorzüge, die Menschen und Wünsche. Denn wir bauen dort, wo wir selbst gerne wohnen. Hochwertig, nachhaltig und mit einer Atmosphäre zum Wohlfühlen. Deshalb stellen wir höchste Ansprüche an Architektur und Ausstattung. So entstehen Häuser, die sich perfekt in ihre Umgebung einfügen und eine Augenweide sind.
+                    Die Wiener Komfortwohnungen vereinen jahrzehntelange Erfahrung in der Metropolregion Wien. Wir kennen den Markt, die Menschen und ihre Wünsche. Denn wir bauen dort, wo wir selbst gerne wohnen. Hochwertig, nachhaltig und mit einer Atmosphäre zum Wohlfühlen. Deshalb stellen wir höchste Ansprüche an Architektur und Ausstattung. So entstehen Häuser, die sich perfekt in ihre Umgebung einfügen und beim Wohnkomfort Maßstäbe setzen.
                 </div>
-                <a href="https://wienerkomfortwohnungen.at" class="link" target="_blank">Weitere Projekte finden sie hier.</a>
+                <a href="https://www.wienerkomfortwohnungen.at/de/immobilien/" class="link" target="_blank">Weitere Projekte finden sie hier.</a>
             </div>
         </section>
 
@@ -85,9 +88,10 @@
                         <div class="customCtaForm__instence">
                             <form action="javascript:void(0);" class="customCtaForm__form" method="post" data-messages='{"error_empty":"Dieses Feld ist leer.","error_valid":"Dieses Feld füllt falsche Daten aus","success":"Vielen Dank für Ihre Bewerbung, Ihr Vorgesetzter wird sich bald mit Ihnen in Verbindung setzen"}'>
                                 <div class="cont">
-                                    <div class="formGroup">
-                                        <input name="name" id="name" type="text" class="my-inpt"
+                                    <div class="formGroup spec-between">
+                                        <input name="name" id="name" type="text" class="my-inpt spec-w-half"
                                             placeholder="Name">
+                                        <input name="lastname" id="lastname" type="text" class="my-inpt spec-w-half" placeholder="Vorname">
                                     </div>
 
                                     <div class="formGroup">
@@ -119,8 +123,14 @@
                                 <div class="formGroup full">
                                     <div class="my-checkbox-grp">
                                         <label class="my-checkbox-grp_cont">
-                                            Ich habe die <a href="javascript:void(0);"
+                                            Ich habe die <a href="./datenschutz.html"
                                                 class="link">Datenschutzerklärung</a> gelesen und akzeptiere sie.
+                                            <input type="checkbox" class="my-checkbox-grp_inpt">
+                                            <span class="my-checkbox-grp_checkmark"></span>
+                                        </label>
+                                        <label class="my-checkbox-grp_cont">
+                                            Ich möchte den <a href="javascript:void(0);"
+                                                class="link">Newsletter</a> erhalten.
                                             <input type="checkbox" class="my-checkbox-grp_inpt">
                                             <span class="my-checkbox-grp_checkmark"></span>
                                         </label>
@@ -156,6 +166,10 @@
             </div>
             
         </footer>
+
+        <div class="cookieBanner">
+            Diese Website verwendet Cookies. Durch die Nutzung der Website stimmen Sie der Verwendung von Cookies zu. <a href="./datenschutz.html">Datenschutzinformationen</a> <button class="acceptCookie">Schließen</button>
+        </div>
     </div>
     <script src="main.min.js"></script>
 </body>

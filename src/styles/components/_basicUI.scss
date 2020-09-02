@@ -318,6 +318,14 @@ body {
                         margin-bottom: 0;
                     }
                 }
+
+                &.spec-between {
+                    @extend .flex;
+                    @extend .flex-wrap;
+                    @extend .flex-v-center;
+                    @extend .flex-h-between;
+                    justify-content: space-between;
+                }
             }
 
             @media screen and (max-width:560px) {
@@ -352,6 +360,23 @@ body {
                     color: #ff5b5b;
                 }
             }
+
+            &#email {
+                &.error {
+                    color: #ff5b5b;
+                }
+            }
+
+            &.spec-w-half {
+                width:calc(50% - 10px);
+
+                @media screen and (max-width:560px) {
+                    width: 100%;
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                }                
+            }
         }
 
         .my-checkbox-grp {
@@ -372,6 +397,11 @@ body {
                 position: relative;
                 padding-left: 35px;
                 cursor: pointer;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
 
             .link {
@@ -527,6 +557,10 @@ body {
             @include font('Semplicita Pro', 12px, $COLOR_GREY, 400, 20px);
             border-bottom: 1px solid transparentize($COLOR_GREY, .5);
 
+            &:first-child {
+                display: none;
+            }
+
             &:last-child {
                 border-bottom: none;
             }
@@ -603,6 +637,7 @@ body {
     @extend .flex-wrap;
     @extend .flex-v-start;
     @extend .flex-h-center;
+    order: 1;
 
     &__logoLine {
         width: 100%;
@@ -663,6 +698,7 @@ body {
     padding: 60px 0 245px 0;
     overflow: hidden;
     position: relative;
+    order: 1;
     .brand-logo {
         position: absolute;
         height: 150%;
@@ -739,7 +775,7 @@ body {
 
     @media screen and (max-width:560px) {
         padding-top: 80px;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
 }
 
@@ -752,7 +788,7 @@ body {
     @extend .flex-h-center;
     background: #FBFBFB;
     padding: 30px;
-    margin-bottom: 140px;
+    order: 2;
 
     .thumbGroup {
         width: 100%;
@@ -806,13 +842,14 @@ body {
         .link {
             @include font('Semplicita Pro', 15px, $COLOR_GREY, 400, 25px);
             transition: all .6s;
-            margin: 0 auto;
+            
             &:hover {
                 opacity: .5;
             }
             @media screen and (max-width:560px) {
                 text-align: center;
                 @include font('Semplicita Pro', 13px, $COLOR_GREY, 400, 20px);
+                margin: 0 auto;
             }
         }
 
@@ -828,6 +865,8 @@ body {
     @extend .flex-wrap;
     @extend .flex-v-start;
     @extend .flex-h-center;
+    order: 1;
+    margin-bottom: 150px;
     &__cont {
         width: 100%;
         max-width: 1150px;
@@ -849,6 +888,7 @@ body {
     @extend .flex-v-start;
     @extend .flex-h-center;
     margin-top: 100px;
+    order: 3;
     
     &__cont {
         width: 100%;
@@ -946,6 +986,10 @@ body {
                     margin: 5px;
                 }
             }
+
+            &:hover {
+                opacity: .5;
+            }
         }
 
         @media screen and (max-width:560px) {
@@ -968,6 +1012,7 @@ body {
         @extend .flex-v-stretch;
         @extend .flex-h-center;
         max-width: 1150px;
+        width: 100%;
 
         .tit {
             width: 100%;
@@ -979,6 +1024,7 @@ body {
         .content {
             width: 100%;
             @include font('Semplicita Pro', 15px, $COLOR_GREY, 400, 25px);
+            word-break:break-word;
             h2 {
                 width: 100%;
                 margin: 30px 0;
@@ -999,6 +1045,70 @@ body {
                     opacity: .5;
                 }
             }
+        }
+
+        @media screen and (max-width:560px) {
+            padding: 0 15px;
+        }
+    }
+}
+
+@media screen and (max-width:560px) {
+    .form {
+        order: 2;
+        margin-bottom: 0;
+    }   
+
+    .awards {
+        order: 1;
+        margin-bottom: 35px;
+    }
+}
+
+
+.basicPage__cont {
+    order: 1;
+}
+
+.cookieBanner {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-height: 80px;
+    @extend .flex;
+    @extend .flex-wrap;
+    @extend .flex-v-center;
+    @extend .flex-h-center;
+    padding: 15px 35px;
+    background: $COLOR_WHITE;
+    border-top: solid 1px #F0F0F0;
+    @include font('Semplicita Pro', 15px, $COLOR_GREY, 400, 25px);
+    z-index: 999;
+
+    a {
+        display: block;
+        margin: 0 5px;
+        transition: all .6s;
+        @include font('Semplicita Pro', 15px, #055a1c, 400, 25px);
+        &:hover {
+            opacity: .5;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        font: inherit;
+        font-weight: normal;
+        color: #FFFFFF;
+        background-color: #055a1c;
+        border: solid 1px #055a1c;
+        border-color: #055a1c;
+        padding: 10px 25px;
+        outline: none;
+        @include font('Semplicita Pro', 15px, $COLOR_WHITE, 400, 25px);
+        &:hover {
+            opacity: .5;
         }
     }
 }

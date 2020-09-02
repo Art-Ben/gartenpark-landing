@@ -6,6 +6,7 @@ module.exports = {
     ],
     JS_LIBS : [
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/js-cookie/src/js.cookie.js',
         'node_modules/select2/dist/js/select2.full.min.js'
     ] 
 }
